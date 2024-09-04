@@ -1,11 +1,12 @@
+require('dotenv').config();
 const express = require("express");
 const mongoose = require("mongoose");
-const dotenv = require("dotenv");
+//const dotenv = require("dotenv");
 
 const app = express();
 app.use(express.json());
 
-dotenv.config;
+//dotenv.config;
 // MongoDB Config
 mongoose.connect(process.env.MONGO_URI, {
 }).then(() => {
