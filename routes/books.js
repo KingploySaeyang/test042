@@ -7,7 +7,7 @@ router.post("/",addbook);
 router.put("/:id",updatebook);
 router.delete("/:id",deletebook);
 router.get("/",getbookAll);
-router.get("/:id",getbookOne);
+router.get("/:genre",getbookOne);
 //router.get("/",getbookOne);
 // Export router
 module.exports = router;
